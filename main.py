@@ -19,7 +19,7 @@ class PongPaddle(Widget):
             vx, vy = ball.velocity
             offset = (ball.center_y - self.center_y) / (self.height / 2)
             bounced = Vector(-1 * vx, vy)
-            vel = bounced * 10
+            vel = bounced * 1.1
             ball.velocity = vel.x, vel.y + offset
 
 
@@ -45,6 +45,12 @@ class PongGame(Widget):
     def update(self, dt):
         self.ball.move()
 
+        # AI control for player2 (computer)
+        if self.ball.center_y > self.player2.center_y:
+            self.player2.center_y += 4   # move up
+        elif self.ball.center_y < self.player2.center_y:
+            self.player2.center_y -= 4   # move down
+
         # bounce off paddles
         self.player1.bounce_ball(self.ball)
         self.player2.bounce_ball(self.ball)
@@ -57,16 +63,17 @@ class PongGame(Widget):
         if self.ball.x < self.x:
             self.player2.score += 1  
             if self.player2.score >= 10:
-                self.show_winner("Player 2 Wins!")
+                self.show_winner("Computer Wins!")
                 return
             self.serve_ball(vel=(4, 0))
 
         if self.ball.right > self.width:
             self.player1.score += 1  
             if self.player1.score >= 10:
-                self.show_winner("Player 1 Wins!")
+                self.show_winner("You Win!")
                 return
             self.serve_ball(vel=(-4, 0))
+
 
     def show_winner(self, message):
         # stop the game loop
@@ -101,8 +108,8 @@ class PongGame(Widget):
     def on_touch_move(self, touch):
         if touch.x < self.width / 3:
             self.player1.center_y = touch.y
-        if touch.x > self.width - self.width / 3:
-            self.player2.center_y = touch.y
+        #if touch.x > self.width - self.width / 3:
+        #    self.player2.center_y = touch.y
 
 
 class PongApp(App):
