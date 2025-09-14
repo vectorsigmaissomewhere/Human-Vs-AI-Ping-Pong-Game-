@@ -1,6 +1,10 @@
 ## Project Image 
 ![Project Screenshot](https://github.com/vectorsigmaissomewhere/Human-Vs-AI-Ping-Pong-Game-/blob/main/project_images/capture557.PNG)
 
+## Model RL System 
+
+![ProjetRLSystem](https://github.com/vectorsigmaissomewhere/Human-Vs-AI-Ping-Pong-Game-/blob/main/project_images/capture558.PNG)
+
 ## Main concepts of RL 
 ```text 
 - States 
