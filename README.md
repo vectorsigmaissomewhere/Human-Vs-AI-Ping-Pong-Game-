@@ -1,3 +1,6 @@
+## Project Image 
+
+
 ## Main concepts of RL 
 ```text 
 - States 
@@ -263,4 +266,11 @@ Value function V(s): expected total return from state s (e.g., “if ball is nea
 Q-function Q(s,a): expected return if I take action a in state s (“if I move up now, I’ll likely hit the ball → good”).
 
 👉 Value functions are the “judges” estimating how good states or actions are.
+```
+
+
+Resources that I have used 
+```text 
+About Reinforcement Learning: 
+https://medium.com/@cedric.vandelaer/reinforcement-learning-an-introduction-part-1-3-866695deb4d1
 ```
