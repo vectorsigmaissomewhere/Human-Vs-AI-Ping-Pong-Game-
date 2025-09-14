@@ -273,4 +273,15 @@ Resources that I have used
 ```text 
 About Reinforcement Learning: 
 https://medium.com/@cedric.vandelaer/reinforcement-learning-an-introduction-part-1-3-866695deb4d1
+Building the UI and Game function: 
+https://kivy.org/doc/stable/
+Gymnasium(custom environments):
+https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/
+Stable-Baseline3 DQN example: 
+https://stable-baselines3.readthedocs.io/en/master/modules/dqn.html
+RL Baseline3 Zoo Repo: https://github.com/DLR-RM/rl-baselines3-zoo
+Stable Baseline3(Github): https://github.com/DLR-RM/stable-baselines3
+Learning to play Pong with PyTorch & Tinashou(Medium): https://medium.com/%40joachimiak.krzysztof/learning-to-play-pong-with-pytorch-tianshou-a9b8d2f1b8bd
+Playing Pong using Reinforcement Learning(MathWorks blog): https://blogs.mathworks.com/deep-learning/2021/03/12/playing-pong-using-reinforcement-learning/
+Beating Pong using Reinforcement Learing: https://medium.com/analytics-vidhya/beating-pong-using-reinforcement-learning-part-1-dddqn-f7fbf5ad7768
 ```
