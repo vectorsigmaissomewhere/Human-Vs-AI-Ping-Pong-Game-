@@ -5,6 +5,28 @@
 
 ![ProjetRLSystem](https://github.com/vectorsigmaissomewhere/Human-Vs-AI-Ping-Pong-Game-/blob/main/project_images/capture558.PNG)
 
+
+## Make the model event more stronger 
+
+Step 1: Delete the previous model which is in our case it is pong_ai_model.zip
+
+Step 2: Change the train_pong_ai.py file 
+```py
+model.learn(total_timesteps=500000)  # train longer for stronger AI
+```
+
+Step 3: Run the command (Windows)
+```cmd
+python train_pong_ai.py 
+```
+
+## How to start the game 
+
+In your console type 
+```cmd 
+python main_ai.py 
+```
+
 ## Main concepts of RL 
 ```text 
 - States 
@@ -15,6 +37,7 @@
 - Tranjectories and return 
 - Value function & Q-function 
 ```
+
 
 RL Framework 
 ```
